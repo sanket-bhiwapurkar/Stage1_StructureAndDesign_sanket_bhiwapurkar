@@ -11,3 +11,68 @@
         transparent 100%
     );
 }
+
+.intro-section {
+    position: relative;
+    background: url('https://images.pexels.com/photos/12843342/pexels-photo-12843342.jpeg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+/* Ensure content stays above overlay */
+.intro-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.call-to-action {
+    position: relative;
+    background: url('https://images.pexels.com/photos/12843342/pexels-photo-12843342.jpeg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.call-to-action > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Testimonial section */
+.testimonial-section {
+    background: url('https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg') center/cover no-repeat;
+    position: relative;
+}
+
+.testimonial-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-glass {
+    max-width: 600px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.custom-control .carousel-control-prev-icon,
+.custom-control .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.carousel-indicators button {
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
