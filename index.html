@@ -12,44 +12,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="root">
-        <div class="container-fluid">
-            <!-- Header -->
-            <header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="/assets/svg/logo.svg" class="logo-header" alt="University logo" srcset="">
-                            CA Department</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Events</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header><!-- End Header -->
+<body data-page="home">
 
+    <div class="root">
+        <!-- Header -->
+        <div id="header"></div>
+        <!-- End Header -->
+        <main class="container-fluid">
             <!-- Hero -->
             <section class="py-5 bg-light">
                 <div class="container-fluid">
@@ -83,7 +52,8 @@
 
                             <!-- Mini stats -->
                             <div class="mt-4 text-body-secondary small">
-                                🚀 30+ Events &nbsp; | &nbsp; 💻 Hands-on Workshops &nbsp; | &nbsp; 🤝 Active Community
+                                🚀 30+ Events &nbsp; | &nbsp; 💻 Hands-on Workshops &nbsp; | &nbsp; 🤝 Active
+                                Community
                             </div>
 
                         </div>
@@ -96,7 +66,8 @@
 
                     </div>
                 </div>
-            </section><!-- End Hero -->
+            </section>
+            <!-- End Hero -->
 
             <!-- Intro -->
             <section class="container-fluid intro-bg py-5">
@@ -110,9 +81,11 @@
                             </div>
 
                             <p class="mb-0">
-                                The Computer Applications Department is a hub for students passionate about technology,
+                                The Computer Applications Department is a hub for students passionate about
+                                technology,
                                 programming,
-                                and innovation. We organize workshops, hackathons, and collaborative projects to help
+                                and innovation. We organize workshops, hackathons, and collaborative projects to
+                                help
                                 students grow
                                 beyond the classroom.
                             </p>
@@ -540,87 +513,16 @@
 
                 </div>
             </section><!-- End Call to Action -->
-
-            <!-- Footer -->
-            <footer class="py-5">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-6 col-md-3 mb-3">
-                            <h5 class="mb-2">CA Department</h5>
-                            <p class="text-body-secondary small border-start ps-3">
-                                <strong>Empowering students</strong> in computer applications through events, workshops,
-                                and innovation.
-                            </p>
-                        </div>
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Quick Links</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Events</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Gallery</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-body-secondary">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Activities</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><span
-                                        class="nav-link p-0 text-body-secondary">Workshops</span>
-                                </li>
-                                <li class="nav-item mb-2"><span
-                                        class="nav-link p-0 text-body-secondary">Hackathons</span>
-                                </li>
-                                <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Projects</span>
-                                </li>
-                                <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Tech
-                                        Talks</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-5 mb-3">
-                            <a href="/"
-                                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"><img
-                                    src="/assets/svg/logo.svg" class="logo-header" alt="University logo"></a>
-                            <form>
-                                <h5>Stay Connected</h5>
-                                <p>Get updates on events and activities.</p>
-                                <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
-                                        class="visually-hidden">Email address</label> <input id="newsletter1"
-                                        type="email" class="form-control" placeholder="Email address"> <button
-                                        class="btn btn-primary" type="button">Subscribe</button> </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                        <p>© 2026 Computer Applications Department. All rights reserved.</p>
-                        <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg
-                                        class="bi" width="24" height="24">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg></a></li>
-                            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg
-                                        class="bi" width="24" height="24" aria-hidden="true">
-                                        <use xlink:href="#facebook"></use>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer><!-- End Footer -->
-        </div>
+        </main>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <!-- End Footer -->
     </div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"
         integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <!-- External script -->
+    <script src="components.js"></script>
     <script src="main.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
