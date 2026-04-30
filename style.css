@@ -76,3 +76,130 @@
 .carousel-indicators .active {
     opacity: 1;
 }
+
+/* Page Hero */
+.page-hero {
+    min-height: 70vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.page-hero > div {
+    position: relative;
+    z-index: 1;
+}
+
+body[data-page="about"] .page-hero {
+background-image: url("https://images.pexels.com/photos/26834970/pexels-photo-26834970.jpeg");
+}
+
+body[data-page="events"] .page-hero {
+background-image: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg");
+}
+
+body[data-page="gallery"] .page-hero {
+background-image: url("https://images.pexels.com/photos/31085764/pexels-photo-31085764.jpeg");
+}
+
+body[data-page="contact"] .page-hero {
+background-image: url("https://images.pexels.com/photos/30901556/pexels-photo-30901556.jpeg");
+}
+
+/* CTA */
+.about-cta {
+    background: url("https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg");
+    position: relative;
+}
+
+.about-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.about-cta > div {
+    position: relative;
+    z-index: 1;
+}
+
+.w-fit {
+    min-width: fit-content;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #dee2e6;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767.98px) {
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #0d6efd;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 2;
+}
+@media (max-width: 767.98px) {
+  .timeline-dot {
+    position: relative;
+    left: 6px;
+  }
+}
+
+.timeline-img {
+  width: 100%;
+  aspect-ratio: 5/4;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.timeline-img-sm {
+  width: 80%;
+  height: fit-content;
+  position: relative;
+  bottom: -33%;
+  left: -8%;
+  border: 6px solid #fff;
+  border-radius: 24px;
+  aspect-ratio: 5/4;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .timeline .row {
+    position: relative;
+  }
+
+  .timeline .col-md-2 {
+    justify-content: flex-start !important;
+    padding-left: 20px;
+  }
+
+  .timeline .col-md-5 {
+    padding-left: 60px;
+  }
+}

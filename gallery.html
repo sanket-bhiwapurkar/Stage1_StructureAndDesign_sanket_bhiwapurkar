@@ -18,7 +18,153 @@
         <div id="header"></div>
         <!-- End Header -->
         <main class="container-fluid">
-            <h1>gallery</h1>
+            <section class="page-hero text-white d-flex align-items-center">
+                <div class="container-fluid text-center py-5">
+
+                    <h1 class="display-4 fw-bold">
+                        Our Gallery
+                    </h1>
+
+                    <p class="lead text-white-50 mt-3">
+                        Moments from workshops, hackathons, and events that shaped our journey.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#gallery" class="btn btn-light px-4">
+                            Explore Photos
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <section id="gallery" class="py-5 container-fluid">
+
+                <!-- TABS -->
+                <ul class="nav nav-pills mb-4 justify-content-center" id="galleryTabs" role="tablist">
+
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#workshops">
+                            Workshops
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#hackathons">
+                            Hackathons
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#events">
+                            Events
+                        </button>
+                    </li>
+
+                </ul>
+
+                <!-- TAB CONTENT -->
+                <div class="tab-content">
+
+                    <!-- WORKSHOPS -->
+                    <div class="tab-pane fade show active" id="workshops">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                                    class="img-fluid rounded gallery-img">
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="row g-3">
+
+                                    <div class="col-6">
+                                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+                                            class="img-fluid rounded gallery-img">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                                            class="img-fluid rounded gallery-img">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg"
+                                            class="img-fluid rounded gallery-img">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                                            class="img-fluid rounded gallery-img">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HACKATHONS -->
+                    <div class="tab-pane fade" id="hackathons">
+
+                        <!-- same layout, different images -->
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <img src="https://images.pexels.com/photos/14612128/pexels-photo-14612128.jpeg"
+                                    class="img-fluid rounded gallery-img">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row g-3">
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/5530483/pexels-photo-5530483.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- EVENTS -->
+                    <div class="tab-pane fade" id="events">
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <img src="https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg"
+                                    class="img-fluid rounded gallery-img">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row g-3">
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/5530483/pexels-photo-5530483.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                    <div class="col-6"><img
+                                            src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg"
+                                            class="img-fluid rounded gallery-img"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
         </main>
         <!-- Footer -->
         <div id="footer"></div>
