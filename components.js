@@ -1,10 +1,10 @@
 const Components = {
     header: `
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-light px-3">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="index.html">
-            <img src="/assets/svg/logo.svg" class="logo-header" alt="">
+        <a class="navbar-brand text-primary fw-bold" href="index.html">
+            <img src="/assets/svg/logo.svg" class="logo" alt="">
             CA Department
         </a>
 
@@ -43,8 +43,8 @@ const Components = {
 </nav>
 `,
 
-    footer: `<footer class="py-5">
-    <div class="container-fluid">
+    footer: `<footer class="p-5 bg-light">
+    <div class="container-fluid text-primary">
         <div class="row">
             <div class="col-6 col-md-3 mb-3">
                 <h5 class="mb-2">CA Department</h5>
@@ -76,7 +76,7 @@ const Components = {
 
             <div class="col-md-5 mb-3">
                 <a href="index.html" class="d-flex align-items-center mb-3 text-decoration-none">
-                    <img src="/assets/svg/logo.svg" class="logo-header" alt="">
+                    <img src="/assets/svg/logo.svg" class="logo" alt="">
                 </a>
                 <h5>Stay Connected</h5>
                 <p>Get updates on events and activities.</p>

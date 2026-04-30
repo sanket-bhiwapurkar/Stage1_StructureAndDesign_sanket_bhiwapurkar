@@ -1,6 +1,98 @@
-.logo-header {
-    width: 2.5rem;
+
+:root {
+  --bs-primary: #303602;
+  --bs-primary-rgb: 48, 54, 2;
+  --bs-light: #e6edaf;
+  --bs-light-rgb: 230, 237, 175;
+  --bs-bg-opacity: 1;
+  --bs-border-color: var(--bs-primary);
+  
 }
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+/* OVERRIDE */
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn {
+    border-radius: 300px;
+}
+
+.btn-text-primary {
+    color: var(--bs-primary);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  --bs-btn-hover-bg: #1b1f01;
+  --bs-btn-hover-border-color: #1b1f01;
+}
+
+.btn-light {
+  --bs-btn-bg: var(--bs-light);
+  --bs-btn-border-color: var(--bs-light);
+}
+
+.btn-light:hover {
+  --bs-btn-hover-bg: #c3cb89;
+  --bs-btn-hover-border-color: #c3cb89;
+}
+
+.btn-outline-light {
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-border-color: var(--bs-light);
+}
+
+.btn-outline-light:hover {
+  --bs-btn-hover-bg: var(--bs-light);
+  --bs-btn-hover-border-color: var(--bs-light);
+}
+
+.badge {
+    display: inline;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.badge-outline-primary {
+    background-color: transparent;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+}
+
+/* NAVIGATION */
+
+.nav-link {
+    padding: 0px !important;
+    margin: 0px 12px 0px 12px;
+    color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    --bs-navbar-active-color: var(--bs-primary) !important;
+    border-bottom: 2px solid var(--bs-primary); 
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--bs-primary);
+}
+
+.logo {
+    width: 2.5rem;
+    color: var(--bs-primary);
+}
+
+/* HOME INTRO */
 
 .intro-bg {
     background: linear-gradient(
@@ -18,10 +110,16 @@
     overflow: hidden;
 }
 
-/* Ensure content stays above overlay */
 .intro-section > * {
     position: relative;
     z-index: 1;
+}
+
+.intro-section::before, .call-to-action::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(var(--bs-primary-rgb), 0.65);
 }
 
 .call-to-action {
@@ -45,7 +143,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(var(--bs-primary-rgb), 0.75);
 }
 
 .testimonial-section .container {
@@ -97,6 +195,10 @@
 .page-hero > div {
     position: relative;
     z-index: 1;
+}
+
+body[data-page="home"] .page-hero {
+background-image: url("https://images.pexels.com/photos/6914649/pexels-photo-6914649.jpeg");
 }
 
 body[data-page="about"] .page-hero {
