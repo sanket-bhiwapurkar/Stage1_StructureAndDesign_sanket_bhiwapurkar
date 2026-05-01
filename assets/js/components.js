@@ -1,4 +1,22 @@
 const Components = {
+    pageLoader: `<div
+        class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center"
+        style="z-index: 9999;">
+
+        <div class="d-flex gap-2">
+
+            <div class="spinner-grow" style="width: 2.5rem; height: 2.5rem; animation-delay: 0s;" role="status">
+            </div>
+
+            <div class="spinner-grow" style="width: 2.5rem; height: 2.5rem; animation-delay: .15s;" role="status">
+            </div>
+
+            <div class="spinner-grow" style="width: 2.5rem; height: 2.5rem; animation-delay: .3s;" role="status">
+            </div>
+
+        </div>
+
+    </div>`,
     header: `
 <nav class="navbar navbar-expand-lg bg-light px-3">
     <div class="container-fluid">

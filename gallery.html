@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
     <title>Gallery</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
         rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <!-- External styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -26,97 +30,83 @@
         <!-- Header -->
         <div id="header"></div>
         <!-- End Header -->
+
         <main class="container-fluid">
+            <!-- Hero -->
             <section class="page-hero d-flex align-items-center">
                 <div class="container-fluid text-center p-5">
-
                     <h1 class="display-4 fw-bold text-white">
                         Our Gallery
                     </h1>
-
                     <p class="lead text-white-50 mt-3">
                         Moments from workshops, hackathons, and events that shaped our journey.
                     </p>
-
                     <div class="mt-4">
                         <a href="#gallery" class="btn btn-light px-4">
                             Explore Photos
                         </a>
                     </div>
-
                 </div>
             </section>
+            <!-- Hero -->
+
+            <!-- Gallery -->
             <section id="gallery" class="p-5 container-fluid">
-
-                <!-- TABS -->
+                <!-- Tabs -->
                 <ul class="nav nav-pills mb-4 justify-content-center" id="galleryTabs" role="tablist">
-
                     <li class="nav-item mx-2">
                         <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#workshops">
                             Workshops
                         </button>
                     </li>
-
                     <li class="nav-item mx-2">
                         <button class="nav-link" data-bs-toggle="pill" data-bs-target="#hackathons">
                             Hackathons
                         </button>
                     </li>
-
                     <li class="nav-item mx-2">
                         <button class="nav-link" data-bs-toggle="pill" data-bs-target="#events">
                             Events
                         </button>
                     </li>
-
                 </ul>
+                <!-- End Tabs -->
 
-                <!-- TAB CONTENT -->
+                <!-- Tab Content -->
                 <div class="tab-content">
-
-                    <!-- WORKSHOPS -->
+                    <!-- Workshop -->
                     <div class="tab-pane fade show active" id="workshops">
-
                         <div class="row g-3">
-
                             <div class="col-md-6">
                                 <img src="assets/images/gallery/pexels-photo-18999470.jpeg"
                                     class="w-100 h-100 object-fit-cover rounded gallery-img">
                             </div>
-
                             <div class="col-md-6">
                                 <div class="row g-3">
-
                                     <div class="col-6">
                                         <img src="assets/images/gallery/pexels-photo-19895774.jpeg"
                                             class="w-100 h-100 object-fit-cover rounded gallery-img">
                                     </div>
-
                                     <div class="col-6">
                                         <img src="assets/images/gallery/pexels-photo-29627312.jpeg"
                                             class="w-100 h-100 object-fit-cover rounded gallery-img">
                                     </div>
-
                                     <div class="col-6">
                                         <img src="assets/images/gallery/pexels-photo-6804071.jpeg"
                                             class="w-100 h-100 object-fit-cover rounded gallery-img">
                                     </div>
-
                                     <div class="col-6">
                                         <img src="assets/images/gallery/pexels-photo-29581808.jpeg"
                                             class="w-100 h-100 object-fit-cover rounded gallery-img">
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
+                    <!-- End Workshop -->
 
-                    <!-- HACKATHONS -->
+                    <!-- Hackathons -->
                     <div class="tab-pane fade" id="hackathons">
-
                         <!-- same layout, different images -->
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -140,12 +130,11 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <!-- End Hackathons -->
 
-                    <!-- EVENTS -->
+                    <!-- Events -->
                     <div class="tab-pane fade" id="events">
-
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <img src="https://images.pexels.com/photos/7942464/pexels-photo-7942464.jpeg"
@@ -168,23 +157,27 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
+                    <!-- End Events -->
                 </div>
-
+                <!-- End Tab Content -->
             </section>
+            <!-- End Gallery -->
         </main>
+
         <!-- Footer -->
         <div id="footer"></div>
         <!-- End Footer -->
     </div>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"
         integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
     <!-- External script -->
     <script src="assets/js/components.js"></script>
     <script src="assets/js/main.js"></script>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
