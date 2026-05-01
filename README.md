@@ -74,6 +74,7 @@ project-root/
     └── images/
         ├── backgrounds/
         └── gallery/
+```
 
 ---
 
@@ -92,4 +93,7 @@ project-root/
 Sanket Bhiwapurkar
 
 GitHub: https://github.com/sanket-bhiwapurkar/
+
+```
+
 ```
