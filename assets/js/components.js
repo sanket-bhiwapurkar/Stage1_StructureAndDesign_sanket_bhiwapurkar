@@ -61,7 +61,7 @@ const Components = {
 </nav>
 `,
 
-    footer: `<footer class="p-5 bg-light">
+    footer: `<footer class="p-2 p-md-5 bg-light">
     <div class="container-fluid text-primary">
         <div class="row">
             <div class="col-6 col-md-3 mb-3">
