@@ -1,23 +1,27 @@
 
 :root {
-  --bs-primary: #303602;
-  --bs-primary-rgb: 48, 54, 2;
+  --bs-primary: #424a06;
+  --bs-primary-rgb: 66, 74, 6;
   --bs-light: #e6edaf;
   --bs-light-rgb: 230, 237, 175;
   --bs-bg-opacity: 1;
-  --bs-border-color: var(--bs-primary);
-  
+  --bs-border-color: var(--bs-primary)
 }
 
 * {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    color: var(--bs-primary);
 }
 
 /* OVERRIDE */
 
+/* Layout */
+
 .container-fluid {
     padding: 0;
 }
+
+/* Button */
 
 .btn {
     border-radius: 300px;
@@ -57,6 +61,8 @@
   --bs-btn-hover-border-color: var(--bs-light);
 }
 
+/* Badge */
+
 .badge {
     display: inline;
     width: fit-content;
@@ -69,9 +75,15 @@
     color: var(--bs-primary);
 }
 
-/* NAVIGATION */
+
+/* Navigation */
 
 .nav-link {
+    color: var(--bs-primary);
+    display: inline;
+}
+
+.navbar-nav .nav-link {
     padding: 0px !important;
     margin: 0px 12px 0px 12px;
     color: var(--bs-primary);
@@ -87,92 +99,24 @@
     border-bottom: 2px solid var(--bs-primary);
 }
 
+/* Tabs */
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  --bs-border-color: var(--bs-primary);
+  --bs-nav-pills-link-active-bg: var(--bs-primary);
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--bs-primary);
+}
+
+/* CUSTOM */
+
+/* Logo */
+
 .logo {
     width: 2.5rem;
     color: var(--bs-primary);
-}
-
-/* HOME INTRO */
-
-.intro-bg {
-    background: linear-gradient(
-        to bottom,
-        var(--bs-light) 0%,
-        var(--bs-light) 50%,
-        transparent 50%,
-        transparent 100%
-    );
-}
-
-.intro-section {
-    position: relative;
-    background: url('https://images.pexels.com/photos/12843342/pexels-photo-12843342.jpeg') center/cover no-repeat;
-    overflow: hidden;
-}
-
-.intro-section > * {
-    position: relative;
-    z-index: 1;
-}
-
-.intro-section::before, .call-to-action::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(var(--bs-primary-rgb), 0.65);
-}
-
-.call-to-action {
-    position: relative;
-    background: url('https://images.pexels.com/photos/12843342/pexels-photo-12843342.jpeg') center/cover no-repeat;
-    overflow: hidden;
-}
-
-.call-to-action > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* Testimonial section */
-.testimonial-section {
-    background: url('https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg') center/cover no-repeat;
-    position: relative;
-}
-
-.testimonial-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(var(--bs-primary-rgb), 0.75);
-}
-
-.testimonial-section .container {
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-glass {
-    max-width: 600px;
-    border-radius: 16px;
-    backdrop-filter: blur(15px);
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
-}
-
-.custom-control .carousel-control-prev-icon,
-.custom-control .carousel-control-next-icon {
-    filter: invert(1);
-}
-
-.carousel-indicators button {
-    background-color: #ffffff;
-    opacity: 0.5;
-}
-
-.carousel-indicators .active {
-    opacity: 1;
 }
 
 /* Page Hero */
@@ -198,46 +142,169 @@
 }
 
 body[data-page="home"] .page-hero {
-background-image: url("https://images.pexels.com/photos/6914649/pexels-photo-6914649.jpeg");
+    background-image: url("https://images.pexels.com/photos/6914649/pexels-photo-6914649.jpeg");
 }
 
 body[data-page="about"] .page-hero {
-background-image: url("https://images.pexels.com/photos/26834970/pexels-photo-26834970.jpeg");
+    background-image: url("https://images.pexels.com/photos/26834970/pexels-photo-26834970.jpeg");
 }
 
 body[data-page="events"] .page-hero {
-background-image: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg");
+    background-image: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg");
 }
 
 body[data-page="gallery"] .page-hero {
-background-image: url("https://images.pexels.com/photos/31085764/pexels-photo-31085764.jpeg");
+    background-image: url("https://images.pexels.com/photos/31085764/pexels-photo-31085764.jpeg");
 }
 
 body[data-page="contact"] .page-hero {
 background-image: url("https://images.pexels.com/photos/30901556/pexels-photo-30901556.jpeg");
 }
 
-/* CTA */
-.about-cta {
-    background: url("https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg");
+/* Background */
+
+.bg-abs {
     position: relative;
+    overflow: hidden;
 }
 
-.about-cta::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-}
-
-.about-cta > div {
+.bg-abs > * {
     position: relative;
     z-index: 1;
 }
 
-.w-fit {
-    min-width: fit-content;
+.bg-abs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
 }
+
+.abs-primary::before {
+    background: rgba(var(--bs-primary-rgb), 0.7);
+}
+
+.abs-secondary::before {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.abs-1 {
+    background: url('https://images.pexels.com/photos/12843342/pexels-photo-12843342.jpeg') center/cover no-repeat;
+}
+
+.abs-2 {
+    background: url('https://images.pexels.com/photos/26559578/pexels-photo-26559578.jpeg') center/cover no-repeat;
+}
+
+.bg-glass {
+    max-width: 600px;
+    border-radius: 16px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+/* Banner */
+
+.banner-bg {
+    background: linear-gradient(
+        to bottom,
+        var(--bs-light) 0%,
+        var(--bs-light) 50%,
+        transparent 50%,
+        transparent 100%
+    );
+}
+
+/* Testimonials */
+
+.carousel {
+  max-width: 600px;  
+}
+
+.custom-control .carousel-control-prev-icon,
+.custom-control .carousel-control-next-icon {
+    filter: invert();
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background: var(--bs-light);
+    padding: 0.4rem;
+    margin: 0 -0.5rem;
+    opacity: 1;
+}
+
+.carousel-control-next {
+  right: -36px;
+}
+
+.carousel-control-prev {
+  left: -36px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* Step List */
+
+.step-list {
+    list-style: decimal;
+    padding-left: 0;
+    margin: 0;
+}
+
+.step-list li {
+    list-style-position: inside;
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.step-list li:last-child {
+    margin-bottom: 0;
+}
+
+.step-list li::marker {
+    font-size: 0;
+}
+
+.step-list li::before {
+    content: counter(list-item);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    color: #fff;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.step-list li > div {
+    display: inline-block;
+    width: calc(100% - 56px);
+    vertical-align: top;
+}
+
+/* Timeline */
 
 .timeline::before {
     content: "";
@@ -246,7 +313,7 @@ background-image: url("https://images.pexels.com/photos/30901556/pexels-photo-30
     left: 50%;
     width: 2px;
     height: 100%;
-    background: #dee2e6;
+    background: var(--bs-light);
     transform: translateX(-50%);
 }
 
@@ -258,17 +325,17 @@ background-image: url("https://images.pexels.com/photos/30901556/pexels-photo-30
 }
 
 .timeline-dot {
-    width: 14px;
-    height: 14px;
-    background: #0d6efd;
+    width:24px;
+    height:24px;
+    background: var(--bs-primary);
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid var(--bs-light);
     z-index: 2;
 }
 @media (max-width: 767.98px) {
   .timeline-dot {
     position: relative;
-    left: 6px;
+    left: 1px;
   }
 }
 
@@ -304,4 +371,16 @@ background-image: url("https://images.pexels.com/photos/30901556/pexels-photo-30
   .timeline .col-md-5 {
     padding-left: 60px;
   }
+}
+
+/* FORM ELEMENTS */
+
+input, textarea {
+    border-radius: 20px !important;
+}
+
+/* UTILITIES */
+
+.w-fit {
+    min-width: fit-content;
 }

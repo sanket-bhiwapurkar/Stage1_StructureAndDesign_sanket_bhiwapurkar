@@ -14,7 +14,7 @@ const Components = {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-md-auto">
 
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" data-page="home">Home</a>
@@ -67,10 +67,10 @@ const Components = {
             <div class="col-6 col-md-2 mb-3">
                 <h5>Activities</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Workshops</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Hackathons</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Projects</span></li>
-                    <li class="nav-item mb-2"><span class="nav-link p-0 text-body-secondary">Tech Talks</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link disabled p-0 text-body-secondary">Workshops</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link disabled p-0 text-body-secondary">Hackathons</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link disabled p-0 text-body-secondary">Projects</span></li>
+                    <li class="nav-item mb-2"><span class="nav-link disabled p-0 text-body-secondary">Tech Talks</span></li>
                 </ul>
             </div>
 
