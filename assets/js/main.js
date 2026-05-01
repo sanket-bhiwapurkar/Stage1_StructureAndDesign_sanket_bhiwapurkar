@@ -1,21 +1,25 @@
 $(document).ready(function () {
 
-    // Render components
-    document.getElementById("page-loader").innerHTML = Components.pageLoader;
-    document.getElementById("header").innerHTML = Components.header;
-    document.getElementById("footer").innerHTML = Components.footer;
+    // Components
+    $("#page-loader").html(Components.pageLoader);
+    $("#header").html(Components.header);
+    $("#footer").html(Components.footer);
 
-    // Page Loader
-    $(window).on("load", function () {
-        $("#page-loader").addClass("d-none");
-    });
-
-    // Active nav logic
-    const page = document.body.dataset.page;
+    // Active nav
+    const page = $("body").data("page");
     $(".nav-link").each(function () {
         if ($(this).data("page") === page) {
             $(this).addClass("active");
         }
     });
+
+});
+
+$(window).on("load", function () {
+    $("#page-loader").fadeOut(300, function () {
+        $(this).addClass("d-none");
+    });
+    $(".root").removeClass("d-none");
+    $("body").addClass("loaded");
 
 });

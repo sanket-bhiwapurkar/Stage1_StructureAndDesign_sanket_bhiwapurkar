@@ -13,6 +13,13 @@
     color: var(--bs-primary);
 }
 
+body{
+    overflow:hidden;
+}
+body.loaded{
+    overflow:auto;
+}
+
 /* OVERRIDE */
 
 /* Layout */
